@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+
+            >
+
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+
+
+                >
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33.33"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="right"
+
+
+                        >
+
+                        <TextView
+                            android:id="@+id/priceRs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="20dp"
+                            android:textColor="@color/colorblack"
+
+                            />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000"
+                            android:textSize="20dp"
+                            android:id="@+id/price"
+                            android:padding="5dp"
+                            android:textColor="@color/colorPrimaryDark"
+
+                            />
+                    </LinearLayout>
+                    <TextView
+                        android:visibility="gone"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Requested Price"
+                        android:fontFamily="@font/robotolight"
+                        android:id="@+id/priceTitleText"
+                        android:textColor="@color/colorblack"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorAccent"
+
+                    >
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33.33"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Completed"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/robotolight"
+                        android:padding="5dp"
+                        android:id="@+id/statusText"
+                        android:background="@drawable/bottom_boder"
+                        android:textColor="@color/colorAccent"
+
+                        />
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/bookingMode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cash Booking"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/robotobold"
+
+
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f9f9f9"
+                android:padding="3dp"
+                >
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order Details"
+                    android:textColor="@color/colorblack"
+                    android:fontFamily="@font/robotolight"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#fff"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+
+
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order Number"
+                        android:textSize="16dp"
+                        android:textColor="#000"
+                        android:fontFamily="@font/robotolight"
+                        />
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        >
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="@font/robotobold"
+                            android:textSize="16dp"
+                            android:text="1230032834"
+                            android:id="@+id/orderidText"
+                            android:textColor="@color/colorblack"
+
+
+                            />
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/transactionIDLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+
+
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transaction ID"
+                        android:textSize="16dp"
+                        android:textColor="#000"
+                        android:fontFamily="@font/robotolight"
+                        />
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        >
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="@font/robotobold"
+                            android:textSize="16dp"
+                            android:text="N/A"
+                            android:id="@+id/transactionidText"
+                            android:textColor="@color/colorblack"
+
+
+                            />
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Required Date "
+
+                        android:textSize="16dp"
+                        android:textColor="@color/colorblack"
+                        android:fontFamily="@font/robotolight"
+                        />
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Large"
+                        android:id="@+id/trucktype"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorblack"
+                        android:fontFamily="@font/robotobold"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12/12/18"
+                            android:id="@+id/date"
+                            android:textSize="16dp"
+                            android:layout_alignParentRight="true"
+
+                            android:textColor="@color/colorblack"
+                            android:fontFamily="@font/robotobold"
+
+
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Required Trucks"
+
+                        android:textSize="16dp"
+                        android:textColor="@color/colorblack"
+                        android:fontFamily="@font/robotolight"
+                        />
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12"
+                            android:id="@+id/totaltrucks"
+                            android:textSize="16dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/colorblack"
+                            android:fontFamily="@font/robotobold"
+
+
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Material Type"
+
+                        android:textSize="16dp"
+                        android:textColor="@color/colorblack"
+                        android:fontFamily="@font/robotolight"
+                        />
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:id="@+id/materialtype"
+                            android:textSize="16dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/colorblack"
+                            android:fontFamily="@font/robotobold"
+
+
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Weight"
+
+                        android:textSize="16dp"
+                        android:textColor="@color/colorblack"
+                        android:fontFamily="@font/robotolight"
+                        />
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:id="@+id/weight"
+                            android:textSize="16dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/colorblack"
+                            android:fontFamily="@font/robotobold"
+
+
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Height"
+
+                        android:textSize="16dp"
+                        android:textColor="@color/colorblack"
+                        android:fontFamily="@font/robotolight"
+                        />
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:id="@+id/height"
+                            android:textSize="16dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/colorblack"
+                            android:fontFamily="@font/robotobold"
+
+
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Length"
+
+                        android:textSize="16dp"
+                        android:textColor="@color/colorblack"
+                        android:fontFamily="@font/robotolight"
+                        />
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:id="@+id/length"
+                            android:textSize="16dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/colorblack"
+                            android:fontFamily="@font/robotobold"
+
+
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/map_drop_pickup"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="From "
+
+                            android:textSize="16dp"
+                            android:textColor="@color/colorblack"
+                            android:fontFamily="@font/robotobold"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="chota bazar,new delhi,133002"
+                            android:id="@+id/fromPlace"
+                            android:textSize="16dp"
+                            android:layout_alignParentRight="true"
+
+                            android:textColor="@color/colorblack"
+                            android:fontFamily="@font/robotolight"
+                            android:layout_marginBottom="10dp"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="To"
+                            android:textSize="16dp"
+                            android:textColor="@color/colorblack"
+                            android:fontFamily="@font/robotobold"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sector 12 b,rohini,new delhi,3812022"
+                            android:id="@+id/toPlace"
+                            android:textSize="16dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/colorblack"
+                            android:fontFamily="@font/robotolight"
+
+
+                            />
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/transportLayout"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+
+
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Company"
+                            android:textSize="16dp"
+                            android:textColor="#000"
+                            android:fontFamily="@font/robotolight"
+                            />
+
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            >
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@font/robotobold"
+                                android:textSize="16dp"
+                                android:text="xyz company"
+                                android:id="@+id/companyname"
+                                android:textColor="@color/colorblack"
+
+
+                                />
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+
+
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Customer Name"
+                            android:textSize="16dp"
+                            android:textColor="#000"
+                            android:fontFamily="@font/robotolight"
+                            />
+
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            >
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@font/robotobold"
+                                android:textSize="16dp"
+                                android:text="xyz transpoter company"
+                                android:id="@+id/name"
+                                android:textColor="@color/colorblack"
+
+
+                                />
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+
+
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Customer Phone "
+                            android:textSize="16dp"
+                            android:textColor="#000"
+                            android:fontFamily="@font/robotolight"
+                            />
+
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            >
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@font/robotobold"
+                                android:textSize="16dp"
+                                android:text="9283474"
+                                android:id="@+id/transpohone"
+                                android:textColor="@color/colorblack"
+
+
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+
+
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Delivery Phone "
+                            android:textSize="16dp"
+                            android:textColor="#000"
+                            android:fontFamily="@font/robotolight"
+                            />
+
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            >
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@font/robotobold"
+                                android:textSize="16dp"
+                                android:text="9283474"
+                                android:id="@+id/tophone"
+                                android:textColor="@color/colorblack"
+
+
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    >
+
+                    <Button
+                        android:visibility="gone"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:text="Map Tracking"
+                        android:textColor="@color/colorwhite"
+                        android:id="@+id/maptracking"
+                        android:padding="7dp"
+                        android:background="@drawable/dark_outline_boder"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/robotolight"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:text="Map Tracking"
+                        android:textColor="@color/colorwhite"
+                        android:id="@+id/viewrequest"
+                        android:padding="7dp"
+                        android:background="@drawable/dark_outline_boder"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/robotolight"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:text="Ride Complete"
+                        android:padding="10dp"
+                        android:textColor="@color/colorAccent"
+                        android:id="@+id/cancel_booking"
+                        android:background="@drawable/thin_outline_boder"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/robotobold"
+                        android:layout_marginRight="10dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

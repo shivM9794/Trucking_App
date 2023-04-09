@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">OSAT Driver</string>
+    <string name="title_activity_main__navigation_activity">Main_Navigation_activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_all_orders">All_orders</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="Rss">\u20B9</string>
+    <string name="title_activity_strat_map_tracking">Map</string>
+
+</resources>

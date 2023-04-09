@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/osatlogo"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The effortless truck booking"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_marginTop="22dp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/otpno_panel_layout"
+            android:padding="2dp"
+            android:layout_centerHorizontal="true"
+
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:padding="2dp"
+                android:layout_gravity="center"
+                android:layout_height="20dp"
+                android:src="@drawable/indflag"
+                />
+            <TextView
+                android:id="@+id/phoneText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:padding="10dp"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/no_boder"
+                android:maxLength="10"
+                android:text="7027373738"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Waiting to detect OTP sms"
+            android:textColor="#000"
+            android:gravity="center"
+
+
+            android:layout_below="@+id/otpno_panel_layout"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_marginTop="22dp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/gray_boder_radius"
+            android:id="@+id/login_panel_layout"
+            android:padding="2dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <EditText
+                android:id="@+id/otpText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter OTP Manually"
+                android:textSize="16dp"
+                android:inputType="phone"
+                android:textColorHint="@color/colorAccent"
+                android:padding="10dp"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/no_boder"
+                android:maxLength="10"
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Verify"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dark_outline_boder"
+            android:textColor="#fff"
+            android:layout_below="@+id/login_panel_layout"
+            android:id="@+id/verfiy"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="RESEND OTP"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textColor="#00b9aa"
+            android:textStyle="bold"
+            android:layout_below="@+id/verfiy"
+            android:id="@+id/resend"
+
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

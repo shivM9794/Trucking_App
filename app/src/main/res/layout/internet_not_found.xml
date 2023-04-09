@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/wifi"
+        android:src="@drawable/wifi"
+        android:layout_above="@+id/title"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:textStyle="italic"
+        android:text="Internet Connection not available."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retry"
+        android:id="@+id/Retry"
+        android:padding="10dp"
+        android:textSize="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/wifi"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/thin_outline_boder"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/robotolight"
+
+
+        />
+</RelativeLayout>

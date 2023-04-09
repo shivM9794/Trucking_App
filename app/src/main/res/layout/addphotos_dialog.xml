@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/opencamera"
+        android:background="@color/listing_heading_background"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/camera"
+            android:layout_centerVertical="true"
+            android:src="@drawable/camera_listing"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:id="@+id/camera_txt"
+            android:text="Camera"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/spacing_view_color"></View>
+
+    <RelativeLayout
+        android:layout_marginLeft="2dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:background="@color/listing_heading_background"
+        android:layout_height="wrap_content"
+        android:id="@+id/opengallery"
+        android:padding="20dp"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/gallery"
+            android:layout_centerVertical="true"
+            android:src="@drawable/photos_listing"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/gallery_txt"
+            android:layout_below="@+id/gallery"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Gallery"/>
+    </RelativeLayout>
+
+</LinearLayout>
